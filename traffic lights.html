@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .trafficLight {
+            width: 80px;
+            height: 200px;
+            background-color: black;
+            margin: 50px auto 0;
+            padding-top: 5px;
+            border-radius: 10px;
+        }
+        .red, .yellow, .green {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin: 10px auto;
+            border: 1px solid;            
+        }
+       
+        .red {            
+            animation: redLight 25s infinite;
+        }
+        .yellow {            
+            animation: yellowLight 25s infinite;
+        }
+        .green {            
+            animation: greenLight 25s infinite;
+        }
+
+        @keyframes redLight {
+            0% { background-color: red;}
+            27% { background-color: red;}
+            28% { background-color: white;}
+            30% { background-color: red;}
+            32% { background-color: white;}
+            34% { background-color: red;}
+            36% { background-color: white;}
+            38% { background-color: red;}
+            40% { background-color: white;}
+            100% { background-color: white;}            
+        }
+
+        @keyframes yellowLight {
+            0% { background-color: white;}
+            39% { background-color: white;} 
+            40% { background-color: yellow;}
+            59% { background-color: yellow;}
+            60% { background-color: white;}    
+            100% { background-color: white;}                    
+        }
+
+        @keyframes greenLight {
+            0% { background-color: white;}
+            59% { background-color: white;}
+            60% { background-color: green;}
+            87% { background-color: green;} 
+            88% { background-color: white;} 
+            90% { background-color: green;}
+            92% { background-color: white;} 
+            94% { background-color: green;} 
+            96% { background-color: white;} 
+            98% { background-color: green;}  
+            100% { background-color: white;}   
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="trafficLight">
+        <div class="red">
+        </div>
+        <div class="yellow">
+        </div>
+        <div class="green">
+        </div>
+    </div>
+</body>
